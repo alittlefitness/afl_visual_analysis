@@ -22,27 +22,27 @@ The Team Kicking to the Right in 1st Quarter dropdown is limited to the Home and
 The Quarter dropdown tags each event with the appropriate quarter and helps normalise the direction of the collected data.
 
 #### Ovals
-An oval is provided for both the Home and Away teams.  The ovals are to scale for the selected venue. Both collect the x, y location of mouse button clicks.  It's recommended to think of the direction that the play is going as the same direction of the TV broadcast.  That is, if a team is kicking to the right on the TV broadcast, they should be kicking to the right on these plots as well.
+An oval is provided for both the Home and Away teams.  The ovals are to scale for the selected venue. Both collect the x, y location of mouse button clicks.  It's recommended to use the same direction as the TV broadcast.  That is, if a team is kicking to the right on the TV broadcast, they should be kicking to the right on these plots as well.
 
 #### Buttons
-There are 6 buttons available to tag various events.  **At the end of each chain of possessions the End Chain button needs to be clicked.**  Multiple buttons may be clicked with each event, for instance the Retained button and Goal button may be clicked if Inside 50 kicks are being tracked.  Each button is also "hotkeyed" to enable the user to use the keyboard to click the button rather than using the mouse.
+There are 6 buttons available to tag various events.  **At the end of each chain of possessions the End Chain button must be clicked.**  Multiple buttons may be clicked with each event, for instance the Retained button and Goal button may be clicked if Inside 50 kicks are being tracked.  Each button is also "hotkeyed" to enable the user to use the keyboard to click the button rather than using the mouse.
 
 ##### Hotkeys
-Home hotkeys:
-Retained - 1
-Stoppage - 2
-TO - 3
-Goal - 4
-Behind - 5
-End Chain - 6
+Home hotkeys:  
+Retained - 1  
+Stoppage - 2  
+TO - 3  
+Goal - 4  
+Behind - 5  
+End Chain - 6  
 
-Away hotkeys:
-Retained - q
-Stoppage - w
-TO - e
-Goal - r
-Behind - t
-End Chain - y
+Away hotkeys:  
+Retained - q  
+Stoppage - w  
+TO - e  
+Goal - r  
+Behind - t  
+End Chain - y  
 
 ## Visual Output tab
 
@@ -50,20 +50,22 @@ End Chain - y
 There are 2 filters available in the Visual Output tab: Analysis Type and Filter output by Quarter/Half/Match.
 
 #### Analysis Type
-There are currently 5 types of visual analysis available: 
-Inside 50 Heatmaps - create a heatmap of of Inside 50 targets.
-Inside 50 Kicks - combine the location of the origin and target of kicks going inside Forward 50.
-D50 Exit Kicks - combine the location of the origin and target of kicks exiting the Defensive 50.
-D1/2 Set Disposals - normalise the origin of all defensive half disposals from a Set (Mark or Free Kick) and create a vector of kick length and direction.
-Full Chain - follow the path of a full chain from origin to end.
+There are currently 5 types of visual analysis available:  
+Inside 50 Heatmaps - create a heatmap of of Inside 50 targets.  
+Inside 50 Kicks - combine the location of the origin and target of kicks going inside Forward 50.  
+D50 Exit Kicks - combine the location of the origin and target of kicks exiting the Defensive 50.  
+D1/2 Set Disposals - normalise the origin of all defensive half disposals from a Set (Mark or Free Kick) and create a vector of kick length and direction.  
+Full Chain - follow the path of a full chain from origin to end.  
 
 Each of these analysis types works with the x, y locations and event tags created in the data collection tab.  Currently, the Goal and Behind tags are used in the Inside 50 Heatmaps; Retained, Stoppage and TO tags are used in the Inside 50 Kicks, D50 Exit Kicks and D1/2 Set Disposals outputs.
+
+It is expected that the user would decide the type of analysis they will be performing prior to starting the data collection.
 
 #### Filter output by Quarter/Half/Match
 This dropdown provides the user with the ability to filter the visual output by the selected timeframe.
 
 ### Home Team Visual Output
-The Home team visual output combines the Analysis Type and time frame filters to produce a visual representation of the collected data for the home team.
+The Home team visual output combines the Analysis Type and timeframe filters to produce a visual representation of the collected data for the home team.
 
 ### Away Team Visual Output
 The Away team visual output combines the Analysis Type and time frame filters to produce a visual representation of the collected data for the away team.
