@@ -708,6 +708,7 @@ server <- function(input, output){
         theme(legend.title = element_blank(),
               legend.position = "top",
               plot.title = element_text(hjust = 0.5),
+              plot.subtitle = element_text(hjust = 0.5),
               panel.grid = element_blank(),
               axis.text = element_blank(),
               axis.title = element_blank(),
@@ -715,7 +716,7 @@ server <- function(input, output){
         coord_fixed(ratio = 1) +
         xlim(-65, 65) +
         ylim(-65, 65) +
-        labs(title = paste(input$home, input$analysis_type),
+        labs(title = paste(input$away, input$analysis_type),
              # expression to provide context around rings and attacking direction
              subtitle = expression(atop("(Outer ring 40m radius, Inner ring 15m radius)", "Attacking direction"~symbol("\256"))))
     }
